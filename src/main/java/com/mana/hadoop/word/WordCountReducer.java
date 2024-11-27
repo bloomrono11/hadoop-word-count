@@ -6,6 +6,9 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
+/**
+ * The type Word count reducer.
+ */
 public class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
     @Override

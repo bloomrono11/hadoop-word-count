@@ -12,9 +12,18 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * The type Word count.
+ */
 public class WordCount {
     private static final Logger log = LoggerFactory.getLogger(WordCount.class);
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws Exception the exception
+     */
     public static void main(String[] args) throws Exception {
         // Ensure that input and output paths are provided
         if (args.length < 2) {
